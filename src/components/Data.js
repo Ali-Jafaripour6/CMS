@@ -168,4 +168,44 @@ const userRows = [
   },
 ];
 
-export { userRows, xAxisData, transactions, users };
+const productsData = [
+  {
+    id: 1,
+    title: "iPhone 16",
+    price: 150000000,
+    avatar: "/images/user.jpg",
+  },
+  {
+    id: 2,
+    title: "iPhone 16 Pro",
+    price: 140000000,
+    avatar: "/images/user.jpg",
+  },
+  {
+    id: 3,
+    title: "iPhone 15",
+    price: 120000000,
+    avatar: "/images/user.jpg",
+  },
+  {
+    id: 4,
+    title: "Macbook Pro",
+    price: 180000000,
+    avatar: "/images/user.jpg",
+  },
+];
+
+const productDetail = [
+  { id: 1, name: "Jan", Sale: 10000 },
+  { id: 2, name: "Feb", Sale: 30000 },
+  { id: 3, name: "March", Sale: 40000 },
+];
+
+export {
+  userRows,
+  xAxisData,
+  transactions,
+  users,
+  productsData,
+  productDetail,
+};
