@@ -3,6 +3,7 @@ import "./product.css";
 import { Link } from "react-router-dom";
 import Chart from "../../components/Charts/Charts";
 import { productDetail } from "../../components/Data";
+import PublishIcon from "@mui/icons-material/Publish";
 export default function product() {
   return (
     <div className="product">
@@ -53,6 +54,40 @@ export default function product() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="productButton">
+        <form action="" className="productForm">
+          <div className="productFormLeft">
+            <label htmlFor="">Mobile</label>
+            <input type="text" placeholder="iPhone" />
+
+            <label htmlFor="">In Stock</label>
+            <select name="" id="inStock">
+              <option value="">Yes</option>
+              <option value="">No</option>
+            </select>
+            <label htmlFor="">is Active</label>
+            <select name="" id="isActive">
+              <option value="">Yes</option>
+              <option value="">No</option>
+            </select>
+          </div>
+          <div className="productFormRight">
+            <div className="productUploader">
+              <img
+                className="productIMGUploader"
+                src="/images/iphone.jpg"
+                alt=""
+              />
+              <label htmlFor="">
+                <PublishIcon></PublishIcon>
+              </label>
+              <input type="file" style={{ display: "none" }} />
+            </div>
+            <button className="productButtonUpload">Upload Edit</button>
+          </div>
+        </form>
       </div>
     </div>
   );
